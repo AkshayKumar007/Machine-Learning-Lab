@@ -1,3 +1,7 @@
+```bash
+  $ python prgm1.py
+```
+
 ## Output
 
 ['Sunny', 'Warm', 'Normal', 'Strong', 'Warm', 'Same', '1']   
