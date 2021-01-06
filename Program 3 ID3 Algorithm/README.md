@@ -1,6 +1,7 @@
  ## Output
  
- outlook
+ ```
+ outlook     
       overcast
           b' yes'
       rain
@@ -15,3 +16,4 @@
                  b' no'
             b' normal'
                  b' yes'
+```
