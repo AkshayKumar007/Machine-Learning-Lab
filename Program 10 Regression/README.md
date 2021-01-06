@@ -5,5 +5,5 @@
 ## Output
 
 ```
-<img src = 'Fig1.png'>
+![](../Program%2010%20Regression/Fig1.png)
 ```
