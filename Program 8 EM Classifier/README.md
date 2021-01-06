@@ -24,7 +24,7 @@ x
  [4.5 5. ]
  [3.5 4.5]]
 Graph for whole dataset
-![](Program%208%20EM%20Classifier/Fig1.png)
+![](output/Fig1.png)
  labels
 [1 1 0 0 0 0 0]
 centroids
