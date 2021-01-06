@@ -24,17 +24,21 @@ x
  [4.5 5. ]
  [3.5 4.5]]
 Graph for whole dataset
+```
 ![](output/Fig1.png)
+```
  labels
 [1 1 0 0 0 0 0]
 centroids
 [[3.9  5.1 ]
  [1.25 1.5 ]]
 Graph using Kmeans Algorithm
+```
 ![](output/Fig2.png)
+```
 lLABELS GMM
 [1 1 0 0 0 0 0]
 Graph using EM Algorithm
+```
 ![](output/Fig3.png)
 
-```
