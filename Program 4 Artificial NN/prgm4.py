@@ -38,21 +38,21 @@ for i in range(epoch):
     #Forward Propogation 
     hinp1=np.dot(X,wh)
 
-hinp=hinp1 + bh 
-hlayer_act = sigmoid(hinp) 
-outinp1=np.dot(hlayer_act,wout) 
-outinp= outinp1+ bout 
-output = sigmoid(outinp)
-
-#Backpropagation 
-EO = y-output 
-outgrad = derivatives_sigmoid(output) 
-d_output = EO* outgrad 
-EH = d_output.dot(wout.T) 
-hiddengrad = derivatives_sigmoid(hlayer_act)  #how much hidden layer wts contributed to err 
-d_hiddenlayer = EH * hiddengrad 
-wout += hlayer_act.T.dot(d_output) *lr# dotproduct of nextlayererror and #currentlayerop 
-wh += X.T.dot(d_hiddenlayer) *lr
+    hinp=hinp1 + bh 
+    hlayer_act = sigmoid(hinp) 
+    outinp1=np.dot(hlayer_act,wout) 
+    outinp= outinp1+ bout 
+    output = sigmoid(outinp)
+    
+    #Backpropagation 
+    EO = y-output 
+    outgrad = derivatives_sigmoid(output) 
+    d_output = EO* outgrad 
+    EH = d_output.dot(wout.T) 
+    hiddengrad = derivatives_sigmoid(hlayer_act)  #how much hidden layer wts contributed to err 
+    d_hiddenlayer = EH * hiddengrad 
+    wout += hlayer_act.T.dot(d_output) *lr# dotproduct of nextlayererror and #currentlayerop 
+    wh += X.T.dot(d_hiddenlayer) *lr
 
 print("Input: \n" + str(X))
 print("Actual Output: \n" + str(y))

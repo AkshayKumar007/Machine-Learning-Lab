@@ -20,8 +20,13 @@ mush.dropna(axis=1, inplace=True)
 target = "class"
 features = mush.columns[mush.columns != target]
 classes = mush[target].unique()
+print(classes)
 test = mush.sample(frac=0.3)
+print(mush.shape)
+print(test.shape)
 mush = mush.drop(test.index)
+print(mush.shape)
+
 probs = {}
 probcl = {}
 
